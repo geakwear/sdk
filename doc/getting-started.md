@@ -29,7 +29,7 @@
 
 4. 在第二个Add an activity to Wear窗口，为手表设备添加一个空白Activity。
 
-5. 下载[mobvoi-api.jar][mobvoi-jar]，添加到项目的库依赖中。
+5. 下载[geakwear-api.jar][geakwear-api]，添加到项目的库依赖中。
 
 当结束创建向导以后，Android Studio会创建一个包含两个模块的新工程。你现在可以为手机端和手表端的两个应用创建Activity、Service、UI等等。在手机端应用，一般做一些比较重的任务，例如网络连接，复杂的计算或者一些需要复杂用户交互的任务。当在手机端完成任务以后，可以把手机端的处理结果通过[数据传输API][wearable-api]通知给手表端。
 
@@ -72,8 +72,6 @@
     ```
 
 4. 使用 **release** 方式打包。
-
-[查看更多应用打包图文教程](http://ask.ticwear.com/?/article/20)
 
 #### Eclipse 手动打包
 
@@ -176,7 +174,7 @@
 
 ### 发送和同步数据
 
-MMS的API提供了一系列的接口作为手机端和手表端应用的通信方式。在实际应用中应该使用这些API来保证你的应用可以进行有效的通信，而不需要自己建立和管理蓝牙连接以及数据收发。主要包括以下三种API：
+GKMS的API提供了一系列的接口作为手机端和手表端应用的通信方式。在实际应用中应该使用这些API来保证你的应用可以进行有效的通信，而不需要自己建立和管理蓝牙连接以及数据收发。主要包括以下三种API：
 
 1. **MessageAPI**: 一般简单无需保证同步的消息的收发。比较适用于进行远程调用的场景。例如从手表发送一些控制指令以控制手机端的音乐播放器。消息对于一些单向的请求模型也比较使用。如果手机端和手表端已经通过蓝牙连接上，那么消息会被成功发送并返回一个正确的返回码。如果蓝牙未连接，那么消息发送失败，并返回一个错误的返回码。
 
@@ -198,7 +196,7 @@ MMS的API提供了一系列的接口作为手机端和手表端应用的通信�
 
 ### <a id="wear-ui-library"></a>创建适合手表展现的界面
 
-一般的Android界面可以在手表上运行，但并不是特别适合手表端的展现。所以开发者可以选用手表端的UI库来创建更适合在手表端展现的样式。在Android Studio里面自带了适合手表使用的UI库。如果使用Eclipse开发，可以[点击下载][eclipse-ui-lib]这个UI库。下载以后，建立一个Android的library项目，然后在正式项目中声明对该项目的依赖，请注意，此UI库依赖于[android-support-v7-recyclerview](https://developer.android.com/tools/support-library/features.html#v7-recyclerview)。为方便起见，我们也打包了这个依赖库，将根目录下的 `android-support-v7-recyclerview.jar` 复制到主工程libs中并依赖即可。
+一般的Android界面可以在手表上运行，但并不是特别适合手表端的展现。所以开发者可以选用手表端的UI库来创建更适合在手表端展现的样式。在Android Studio里面自带了适合手表使用的UI库。如果使用Eclipse开发，可以在网上找移植版本。
 
 以下是一些主要的类：
 
@@ -229,11 +227,10 @@ MMS的API提供了一系列的接口作为手机端和手表端应用的通信�
 **WearableListView**: 一个为手表适配优化过的ListView。
 
 ### 示例
-Geak-api的详细用法以及手表的界面实现范例，可以参考项目[mobvoi-api-demo]。
+Geak-api的详细用法以及手表的界面实现范例，可以参考项目[geakwear-api-demo]。
 
 
-[mobvoi-jar]: https://github.com/ticwear/sdk/raw/master/lib/mobvoi-api.jar
-[wearable-api]: http://developer.ticwear.com/doc/wearable-api
-[eclipse-ui-lib]: https://github.com/ticwear/sdk/raw/master/lib/eclipse-UI-lib.zip
-[mobvoi-api-demo]: https://github.com/ticwear/GeakwearApiDemo
+[geakwear-api]: https://github.com/geakwear/sdk/raw/master/lib/geakwear-api.jar
+[wearable-api]: http://developer.igeak.com/doc/wearable-api
+[geakwear-api-demo]: https://github.com/geakwear/GeakwearApiDemo
 
