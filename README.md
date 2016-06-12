@@ -51,7 +51,7 @@ http://developer.igeak.com/doc/gms-compat
 
 2. 如果你使用了GMS通讯，需要替换成 Geakwear Mobile Services：
   * 引入geakwear-api.jar，同时保留google-play-services.jar
-  * 将代码中的Google Mobile Services (GMS) API替换为仅包名不同的Geakwear Mobile Services (GKMS) API，GoogleApiClient替换为GeakApiClient。在AndroidManifest.xml里面把`com.google.android.gms.wearable.BIND_LISTENER`替换为`com.igeak.android.wearable.BIND_LISTENER`
+  * 将代码中的Google Mobile Services (GMS) API替换为仅包名不同的Geak Mobile Services (GKMS) API，GoogleApiClient替换为GeakApiClient。在AndroidManifest.xml里面把`com.google.android.gms.wearable.BIND_LISTENER`替换为`com.igeak.android.wearable.BIND_LISTENER`
   * 在App启动时调用GeakApiManager.getInstance().adaptService(context)，该方法必须在任何可能的API调用操作前调用，它将会自动探测当前系统情况，选择底层是使用GKMS或GMS。如果想自己决定使用哪种API，可以通过调用GeakApiManager.getInstance().loadService(context, group)来指定使用Geakwear或Android Wear的API，以取代上面的adaptService方法。如果这两个方法都没有被调用，API会变成仅Geakwear系统能使用的方式。
   * 在AndroidManifest.xml中注册GMS Wearable Listener Service的代理服务：
 
