@@ -2,4 +2,4 @@
 
 开发文档请参见：[AW兼容][gms-compat]
 
-[gms-compat]: /doc/gms-compat.md
+[gms-compat]: /doc/gms-compact.md
