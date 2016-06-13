@@ -61,7 +61,7 @@
 
     ``` gradle
     dependencies {
-        classpath 'com.igeak.tools.build:gradle:1.0.4'
+        classpath 'com.igeak.tools.build:igeak:1.0.4'
     }
     ```
 
