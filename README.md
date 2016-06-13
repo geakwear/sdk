@@ -1,19 +1,18 @@
 # Geakwear Developer SDK
 为了方便第三方开发者迅速使用SDK来开发Geakwear应用，我们提供了以下联系方式来协助开发：  
-**QQ群：88888888**  
-**微博：Geakwear**  
-**官网：http://developer.igeak.com/**  
-**社区：http://10w.igeak.com/**  
+
+**微博：果壳电子**  
+**官网：[果壳开发者][igeak-dev]**  
+**社区：[果壳极客团][igeak-10w]**  
 
 ## 非Android Wear开发者
 我们建议您采用如下步骤
 * Step 1：运行sample文件夹里的示例程序来了解SDK提供的基本功能，如数据传输和语音输入
-* Step 2：阅读开发文档深入了解如何使用: http://developer.igeak.com/doc/getting-started
+* Step 2：阅读开发文档深入了解如何使用: [快速入门][getting-started]
 
 ## Android Wear开发者
 Android Wear应用目前分为国际版和中国版，中国版的应用需要使用裁剪版的SDK（在文件夹android-wear-lib中可以找到）。
-关于如何开发一个中国版的Android Wear应用，并将此应用移植到Geakwear平台，请参考Android Wear应用兼容文档：  
-http://developer.igeak.com/doc/gms-compat
+关于如何开发一个中国版的Android Wear应用，并将此应用移植到Geakwear平台，请参考Android Wear应用兼容文档：[AW应用兼容][gms-compact]
 
 如果您想让您的应用同时兼容Android Wear（国际版或中国版）和Geakwear，请采用如下步骤
 
@@ -47,7 +46,7 @@ http://developer.igeak.com/doc/gms-compat
     ```
     
   * 使用 release 方式打包
-  * 更多应用打包详情，参考开发者文档中的[打包应用](http://developer.igeak.com/doc/getting-started#打包应用)
+  * 更多应用打包详情，参考开发者文档中的[打包应用][pack-apps]
 
 2. 如果你使用了GMS通讯，需要替换成 Geakwear Mobile Services：
   * 引入geakwear-api.jar，同时保留google-play-services.jar
@@ -64,4 +63,10 @@ http://developer.igeak.com/doc/gms-compat
     ```
 * 重新编译打包
 
-3. 更多兼容AW的详情，参考开发者文档中[AW应用兼容](http://developer.igeak.com/doc/gms-compat)
+3. 更多兼容AW的详情，参考开发者文档中[AW应用兼容][gms-compact]
+
+[igeak-dev]: http://developer.igeak.com/
+[igeak-10w]: http://10w.igeak.com/
+[getting-started]: /doc/getting-started.md
+[gms-compact]: /doc/gms-compact.md
+[pack-apps]: /doc/getting-started.md#打包应用
