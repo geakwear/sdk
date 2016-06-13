@@ -82,7 +82,7 @@
 1. 引入[geakwear-api.jar][geakwear-jar]，同时添加或保留[google-play-services][gms-jar]（AW中国版需使用[特定的 GMS](#aw-china)）。
 
     * 注1：建议使用 Android Studio 环境。如果是Eclipse用户，需手动添加 `Google Play Services` 的 meta-data 和 jar包，详见：[Setting Up Google Play Services][gms-jar]。
-    * 注2：我们提供了兼容模式的 Sample code ([Eclipse][demo-compact-eclipse]/[Android Studio][demo-compact-as]) 供参考
+    * 注2：我们提供了兼容模式的 Sample code ([Eclipse][demo-compat-eclipse]/[Android Studio][demo-compat-as]) 供参考
     * 注3：目前我们仅测试支持了 `7.3 ~ 7.8` 版本，其他版本可能会出现兼容性问题。
 
 2. 使用 Geak API。详情参考[快速入门][igeak-dev]。如果你已经有AW的代码，可以通过下面的步骤来切换：
@@ -115,7 +115,7 @@
 
 5. 重新编译打包。
 
-可以参看Github开源项目中兼容模式 ([Eclipse][demo-compact-eclipse]/[Android Studio][demo-compact-as])的使用样例。
+可以参看Github开源项目中兼容模式 ([Eclipse][demo-compat-eclipse]/[Android Studio][demo-compat-as])的使用样例。
 
 #### 仅Geakwear运行方式
 
@@ -140,7 +140,7 @@
 
 ### <a id="aw-china"></a>AW中国版的通讯兼容
 
-国际版的 Android Wear 应用无法直接在中国版 Android Wear 手表操作系统上通讯。包含通讯功能的AW应用需要更换手机、手表端依赖的GMS库才能在中国版 Android Wear 系统上通讯，但不需要改任何代码（包括混淆配置等都保持与[`GMS`][gms-jar]一致）。详情可参看[英文官方文档][awc-doc]，或者参考我们的 [CompatModeChinaDemo][demo-compact-china]。
+国际版的 Android Wear 应用无法直接在中国版 Android Wear 手表操作系统上通讯。包含通讯功能的AW应用需要更换手机、手表端依赖的GMS库才能在中国版 Android Wear 系统上通讯，但不需要改任何代码（包括混淆配置等都保持与[`GMS`][gms-jar]一致）。详情可参看[英文官方文档][awc-doc]，或者参考我们的 [CompatModeChinaDemo][demo-compat-china]。
 
 打包中国版Android Wear应用需要进行以下四个步骤：
 
@@ -262,7 +262,7 @@ setprop log.tag.WearableConn VERBOSE
 
 [aw]: https://www.android.com/wear/
 [igeak]: http://igeak.com/
-[igeak-dev]: http://developer.igeak.com/doc/getting-started
+[igeak-dev]: /doc/getting-started.md
 [as]: http://developer.android.com/sdk/index.html
 [aw-pkg]: http://developer.android.com/training/wearables/apps/packaging.html
 [geakwear-jar]: https://github.com/geakwear/sdk/raw/master/lib/geakwear-api.jar
@@ -270,9 +270,9 @@ setprop log.tag.WearableConn VERBOSE
 [gms-jar]: https://developers.google.com/android/guides/setup
 [awc-sdk]: https://github.com/geakwear/sdk/raw/master/lib/google-play-services-7-8-87.zip
 [awc-doc]: http://developer.android.com/intl/es/training/wearables/apps/creating-app-china.html
-[demo-compact-eclipse]: https://github.com/geakwear/sdk/tree/master/sample/eclipse/CompatModeDemo
-[demo-compact-as]: https://github.com/geakwear/sdk/tree/master/sample/android-studio/CompatModeDemo
-[demo-compact-china]: https://github.com/geakwear/sdk/tree/master/sample/android-studio/CompatModeChinaDemo
+[demo-compat-eclipse]: https://github.com/geakwear/sdk/tree/master/sample/eclipse/CompatModeDemo
+[demo-compat-as]: https://github.com/geakwear/sdk/tree/master/sample/android-studio/CompatModeDemo
+[demo-compat-china]: https://github.com/geakwear/sdk/tree/master/sample/android-studio/CompatModeChinaDemo
 [awc-demo-eclipse]: https://github.com/geakwear/sdk/tree/master/sample/eclipse/CompatModeChinaDemo
 [wearable-debug]: /doc/wearable-api.md#debug-wearable-api
 

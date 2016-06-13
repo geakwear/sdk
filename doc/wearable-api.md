@@ -172,5 +172,5 @@ public void onMessageReceived(MessageEvent messageEvent) {
 [geakwear-sdk]: https://github.com/geakwear/sdk
 [gkms-demo-eclipse]: https://github.com/geakwear/sdk/tree/master/sample/eclipse/DataLayer
 [gkms-demo-as]: https://github.com/geakwear/sdk/tree/master/sample/android-studio/DataLayer
-[compat-mode]: http://developer.igeak.com/doc/gms-compat
+[compat-mode]: /doc/gms-compat.md
 

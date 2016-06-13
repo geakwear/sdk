@@ -13,7 +13,7 @@
 ## Android Wear开发者
 Android Wear应用目前分为国际版和中国版，中国版的应用需要使用裁剪版的SDK（在文件夹android-wear-lib中可以找到）。
 关于如何开发一个中国版的Android Wear应用，并将此应用移植到Geakwear平台，请参考Android Wear应用兼容文档：  
-[AW应用兼容][gms-compact]
+[AW应用兼容][gms-compat]
 
 如果您想让您的应用同时兼容Android Wear（国际版或中国版）和Geakwear，请采用如下步骤
 
@@ -64,10 +64,10 @@ Android Wear应用目前分为国际版和中国版，中国版的应用需要�
     ```
 * 重新编译打包
 
-3. 更多兼容AW的详情，参考开发者文档中[AW应用兼容][gms-compact]
+3. 更多兼容AW的详情，参考开发者文档中[AW应用兼容][gms-compat]
 
 [igeak-dev]: http://developer.igeak.com/
 [igeak-10w]: http://10w.igeak.com/
 [getting-started]: /doc/getting-started.md
-[gms-compact]: /doc/gms-compact.md
+[gms-compat]: /doc/gms-compat.md
 [pack-apps]: /doc/getting-started.md#打包应用

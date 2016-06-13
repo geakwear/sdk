@@ -231,6 +231,6 @@ Geak-api的详细用法以及手表的界面实现范例，可以参考项目[ge
 
 
 [geakwear-api]: https://github.com/geakwear/sdk/raw/master/lib/geakwear-api.jar
-[wearable-api]: http://developer.igeak.com/doc/wearable-api
+[wearable-api]: /doc/wearable-api.md
 [geakwear-api-demo]: https://github.com/geakwear/GeakwearApiDemo
 
