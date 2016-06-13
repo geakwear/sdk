@@ -1,4 +1,4 @@
-如何使用Android Studio开发Ticwear应用
+如何使用Android Studio开发Geakwear应用
 =========================================================
 
 所有步骤可参考sample下的DataLayer工程
@@ -20,4 +20,4 @@
 
 7. 配置release签名文件，使用'gradle :mobile:assembleRelease'命令，或者在AndroidStuido的gradle任务面板中选择:mobile:assembleRelease单击，就可生成最终的发布包了，路径在'mobile/build/outputs/apk/mobile-release.apk'；
 
-8. 开发中碰到任何问题，请发邮件给'geakwear@zenmen.com'，或者前往https://github.com/geakwear/sdk/issues创建issues。
+8. 开发中碰到任何问题，请发邮件给'geakwear@zenmen.com'，或者前往https://github.com/geakwear/sdk/issues 创建issues。
