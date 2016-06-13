@@ -7,12 +7,12 @@
 
 ## 非Android Wear开发者
 我们建议您采用如下步骤
-* Step 1：运行sample文件夹里的示例程序来了解SDK提供的基本功能，如数据传输和语音输入
+* Step 1：运行sample文件夹里的示例程序来了解SDK提供的基本功能，如数据传输
 * Step 2：阅读开发文档深入了解如何使用: [快速入门][getting-started]
 
 ## Android Wear开发者
 Android Wear应用目前分为国际版和中国版，中国版的应用需要使用裁剪版的SDK（在文件夹android-wear-lib中可以找到）。
-关于如何开发一个中国版的Android Wear应用，并将此应用移植到Geakwear平台，请参考Android Wear应用兼容文档：
+关于如何开发一个中国版的Android Wear应用，并将此应用移植到Geakwear平台，请参考Android Wear应用兼容文档：  
 [AW应用兼容][gms-compact]
 
 如果您想让您的应用同时兼容Android Wear（国际版或中国版）和Geakwear，请采用如下步骤
