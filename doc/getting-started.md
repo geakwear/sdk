@@ -125,7 +125,7 @@
 
 1. 打开手表端的设置，进入“关于”，多次点击版本号，即可打开开发者选项。
 
-2. 打开手表端开发者选项中的“ADB调试“和“通过WiFi调试”。
+2. 打开手表端开发者选项中的“ADB调试”和“通过WiFi调试”。
 
 3. 将手表连上WiFi，并查看手表的ip。
 
@@ -143,7 +143,7 @@
     adb -s <手表ip>:5555 <command>
     ```
 
-注，如果WiFi调试时，出现类似 `unable to connect to <手表ip>:7272: Operation timed out` 的问题，可能是你的WiFi路由器设置了屏蔽，请使用蓝牙调试方式。
+注，如果WiFi调试时，出现类似 `unable to connect to <手表ip>:5555: Operation timed out` 的问题，可能是你的WiFi路由器设置了屏蔽，请使用蓝牙调试方式。
 
 ### 发送和同步数据
 
