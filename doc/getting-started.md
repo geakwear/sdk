@@ -12,7 +12,7 @@
 
 ### 配置开发环境
 
-在应用市场上下载最新版本的Geakwear助手，安装在手机上。手机安卓系统必须为安卓4.3以上版本。将手表和手机均连接到电脑上，若手表无法通过USB直接连接电脑，请参看[WiFi调试](#wifi-debug)或者[蓝牙调试](#bt-debug)来连接手表。
+在应用市场上下载最新版本的Geakwear助手，安装在手机上。手机安卓系统必须为安卓4.3以上版本。将手表和手机均连接到电脑上，若手表无法通过USB直接连接电脑，请参看[WiFi调试](#wifi-debug)来连接手表。
 
 ### 创建项目
 
@@ -134,43 +134,16 @@
 5. 执行以下命令:
 
     ``` shell
-    adb connect <手表ip>:7272
+    adb connect <手表ip>:5555
     ```
 
-6. 这时若命令行中返回“connected to 手表ip:7272”。即可使用adb命令操作手表端。
+6. 这时若命令行中返回“connected to 手表ip:5555”。即可使用adb命令操作手表端。
 
     ``` shell
-    adb -s <手表ip>:7272 <command>
+    adb -s <手表ip>:5555 <command>
     ```
 
 注，如果WiFi调试时，出现类似 `unable to connect to <手表ip>:7272: Operation timed out` 的问题，可能是你的WiFi路由器设置了屏蔽，请使用蓝牙调试方式。
-
-### <a id="bt-debug"></a>蓝牙调试
-
-对于手表无法通过USB连接到电脑或无法使用WiFi调试的情况，Geakwear支持使用蓝牙进行调试。使用方法：
-
-1. 打开手表端的设置，进入“关于”，多次点击版本号，即可打开开发者选项。
-
-2. 打开手表端开发者选项中的“ADB调试“和“通过蓝牙调试”。
-
-3. 打开手机端Geakwear助手，点击右上角进入“更多”选项，多次点击版本号上的图标，打开开发者选项。
-
-4. 打开手机端开发者蓝牙调试开关。
-
-5. 执行以下命令:
-
-    ``` shell
-    adb forward tcp:4444 localabstract:/adb-hub
-    adb connect localhost:4444
-    ```
-
-6. 这时应该看到手机端蓝牙调试选项中target和host的状态都变为connected。现在即可使用adb命令操作手表端。
-
-    ``` shell
-    adb -s localhost:4444 <command>
-    ```
-
-注： 如果遇到 "unable to connect to localhost:4444: Connection refused" 之类的问题，可能是端口号被占用，尝试切换端口号来解决。
 
 ### 发送和同步数据
 
