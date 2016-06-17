@@ -11,7 +11,7 @@
 3. 在mobile/build.gradle文件中引用Geakwear打包插件：
    apply plugin: 'igeak'
 
-4. 拷贝geakwear-api.jar到工程中（用于手机和手表数据传输）
+4. 拷贝geakwear-api.jar到工程common下的libs文件夹中（用于手机和手表数据传输）
 
 5. 如果不需要兼容原生android wear的话，移除gms的依赖
    // compile 'com.google.android.gms:play-services:7.3.0'
